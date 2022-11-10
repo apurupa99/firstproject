@@ -1,0 +1,43 @@
+{
+	"name": "Dataflow1",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "Json1",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "Json2",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				}
+			],
+			"transformations": [],
+			"scriptLines": [
+				"source(output(",
+				"          responses as (responseId as string, values as (startDate as string, endDate as string, status as string, ipAddress as string, progress as integer, duration as integer, finished as string, recordedDate as string, {_recordId} as string, recipientFirstName as string, recipientEmail as string, QID3 as integer, QID6_1 as string, QID6_2 as string, QID6_5 as string, QID6_6 as string, QID6_7 as string, QID6_8 as string), labels as (QID3 as string), displayedFields as string[], displayedValues as (QID3 as integer[]))[]",
+				"     ),",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false,",
+				"     documentForm: 'documentPerLine') ~> source1",
+				"source1 sink(allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     umask: 0022,",
+				"     preCommands: [],",
+				"     postCommands: [],",
+				"     skipDuplicateMapInputs: true,",
+				"     skipDuplicateMapOutputs: true) ~> sink1"
+			]
+		}
+	}
+}

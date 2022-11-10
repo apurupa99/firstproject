@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 4",
+	"properties": {
+		"content": {
+			"query": "\nCREATE PROCEDURE procedure1\n      \n    @FirstName nvarchar(50)   \nAS   \n\n   create table table5\nGO  \n\n\t",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "POOLDED1",
+				"poolName": "POOLDED1"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

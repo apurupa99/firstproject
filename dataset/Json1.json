@@ -1,0 +1,119 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "part-00000-08c88043-8cd5-4a50-87f8-1274ebdf12a3-c000.json",
+				"fileSystem": "1adfactory"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"responses": {
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"responseId": {
+								"type": "string"
+							},
+							"values": {
+								"type": "object",
+								"properties": {
+									"startDate": {
+										"type": "string"
+									},
+									"endDate": {
+										"type": "string"
+									},
+									"status": {
+										"type": "string"
+									},
+									"ipAddress": {
+										"type": "string"
+									},
+									"progress": {
+										"type": "integer"
+									},
+									"duration": {
+										"type": "integer"
+									},
+									"finished": {
+										"type": "string"
+									},
+									"recordedDate": {
+										"type": "string"
+									},
+									"_recordId": {
+										"type": "string"
+									},
+									"recipientFirstName": {
+										"type": "string"
+									},
+									"recipientEmail": {
+										"type": "string"
+									},
+									"QID3": {
+										"type": "integer"
+									},
+									"QID6_1": {
+										"type": "string"
+									},
+									"QID6_2": {
+										"type": "string"
+									},
+									"QID6_5": {
+										"type": "string"
+									},
+									"QID6_6": {
+										"type": "string"
+									},
+									"QID6_7": {
+										"type": "string"
+									},
+									"QID6_8": {
+										"type": "string"
+									}
+								}
+							},
+							"labels": {
+								"type": "object",
+								"properties": {
+									"QID3": {
+										"type": "string"
+									}
+								}
+							},
+							"displayedFields": {
+								"type": "array",
+								"items": {
+									"type": "string"
+								}
+							},
+							"displayedValues": {
+								"type": "object",
+								"properties": {
+									"QID3": {
+										"type": "array",
+										"items": {
+											"type": "integer"
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

@@ -1,0 +1,34 @@
+{
+	"name": "flowlet1",
+	"properties": {
+		"type": "Flowlet",
+		"typeProperties": {
+			"sources": [
+				{
+					"linkedService": {
+						"referenceName": "AzureDataLakeStorage1",
+						"type": "LinkedServiceReference"
+					},
+					"name": "source1"
+				}
+			],
+			"sinks": [],
+			"transformations": [
+				{
+					"name": "output1"
+				}
+			],
+			"scriptLines": [
+				"source(useSchema: false,",
+				"     allowSchemaDrift: true,",
+				"     validateSchema: false,",
+				"     ignoreNoFilesFound: false,",
+				"     format: 'json',",
+				"     fileSystem: '1011testjson',",
+				"     fileName: 'data_441e1095-a66d-424e-8b28-4aa2cac35ba9_32372554-5966-486f-9ba8-ccbdb2f8d23b.json',",
+				"     documentForm: 'documentPerLine') ~> source1",
+				"source1 output() ~> output1"
+			]
+		}
+	}
+}

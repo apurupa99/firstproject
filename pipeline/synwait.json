@@ -1,0 +1,19 @@
+{
+	"name": "synwait",
+	"properties": {
+		"activities": [
+			{
+				"name": "Wait1",
+				"type": "Wait",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 1
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2022-09-25T15:56:59Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}

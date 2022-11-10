@@ -1,0 +1,20 @@
+{
+	"name": "syntest",
+	"properties": {
+		"activities": [
+			{
+				"name": "Fail",
+				"type": "Fail",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"message": "failed",
+					"errorCode": "1002"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2022-09-25T16:35:08Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}

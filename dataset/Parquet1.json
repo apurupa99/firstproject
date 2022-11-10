@@ -1,0 +1,348 @@
+{
+	"name": "Parquet1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "ARCUST_W_20220719_080712.parquet",
+				"fileSystem": "newlatest"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "RMCO",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMCUST",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMNAME",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMADD1",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMADD2",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMCITY",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMST",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMCTRY",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMFPCD",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMJOB",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMLSAL",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMYSAL",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMMSAL",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMLAMT",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMLPMO",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMLPDA",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMLPCT",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMLPYR",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMSNAM",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMGL",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMPHNO",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMSLS",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMSLS2",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMFCHG",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMSTMT",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMICO",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMCONT",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMTYPE",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMHCR",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMHCMO",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMHCDA",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMHCCT",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMHCYR",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMCRCD",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMCRLI",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMTXBL",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMFXNO",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMTXCD",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMACON",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMICOD",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMICO#",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMIVND",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMIDPT",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMIGL",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMPCD",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMDISC",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMEDI",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMTXID",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMTERM",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMMAIL",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMLANG",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMCURR",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMEINV",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMBEAD",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMNUSE",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMACTV",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMITYP",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMID",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMSCNV",
+				"type": "UTF8"
+			},
+			{
+				"name": "RMDATL",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMDATH",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMLUDT",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "RMLUUS",
+				"type": "UTF8"
+			},
+			{
+				"name": "DWACTN",
+				"type": "UTF8"
+			},
+			{
+				"name": "DWTIME",
+				"type": "INT96"
+			},
+			{
+				"name": "KYCO",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			},
+			{
+				"name": "KYCUST",
+				"type": "DECIMAL",
+				"precision": 38,
+				"scale": 18
+			}
+		]
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
